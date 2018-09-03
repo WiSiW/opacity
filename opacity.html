@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>子元素不受父元素的透明苏影响</title>
+    <style>
+        .content{
+            width:100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5)
+        }
+        .main{
+            margin:0 auto;
+            width: 100px;
+            margin-top: 20%;
+            background: rgba(0,0,0,1);
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body style="margin: 0 0">
+<div class="content">
+    父元素
+    <div class="main">子元素</div>
+</div>
+</body>
+</html>
